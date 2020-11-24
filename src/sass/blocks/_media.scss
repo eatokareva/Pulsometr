@@ -1,0 +1,223 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+    .title{
+        &_left{
+            font-size: 32px;
+        }
+
+    }
+    
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        &__contacts {
+            a {
+                font-size: 16px;
+            }
+        }
+        &__logo {
+            max-width: 230px;
+            img {
+                width: 100%;
+            }
+        }
+        &__official {
+            span {
+                margin-top: 8px;
+                font-size: 16px;
+            }
+        }
+        }
+    .button {
+        margin-top: 4px;
+        &__promo {
+            margin-top: 50px;
+            width: 250px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+    .promo{
+        &__header {
+            font-size: 34px;
+        }
+        &__subheader {
+            margin-top: 12px;
+            font-size: 20px;
+        }
+        &__icons {
+            width: 365px;
+        }
+        &__link{
+            font-size: 15px;
+        }
+    }
+    .title {
+        font-size: 26px;
+    }   
+    .consultation {
+        &__descr {
+            font-size: 18px;
+        }
+    }     
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .header {
+        &__official {
+            display: none
+        }    
+    }
+    .button {
+        &_promo {
+            margin-top: 50px;
+            width: 250px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+    .advant {
+        padding: 50px 0 58px 0;
+        &__wrapper {
+            margin-top: 25px;
+        }
+        &__item {
+            margin-right: 5px;
+        }
+        &__descr {
+            margin-top: 28px;
+            font-size: 16px;
+        }
+        &__text {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    }
+    .title {
+        font-size: 26px;
+        &_left{
+            font-size: 24px;
+        }
+    }
+    .consultation {
+        &__descr {
+            margin-top: 50px;
+            font-size: 14px;
+        }
+        .feed-form {
+            width: 250px;
+        }
+    }
+    
+}
+@media (max-width: 575px) {
+    .container {
+        max-width: 300px;
+    }
+    .header {
+        padding: 21px 0 33px 0;
+        &__contacts {
+            a {
+                font-size: 12px;
+            }
+        }
+        &__logo {
+            max-width: 160px;
+            
+            a {
+                img {
+                    width: 100%;
+                    display: block;
+                    transform: translateY(50%);
+                }
+            }
+        }
+    }
+    .button {
+        margin-top: 6px;
+        width: 130px;
+        height: 25px;
+        font-size: 10px;
+        &_promo {
+            margin-top: 60px;
+            width: 200px;
+            height: 35px;
+            font-size: 12px;
+        }
+        &_submit {
+            width: 100%;
+            height: 45px;
+            font-size: 12px;
+        }        
+    }
+    .promo {
+        min-height: 600px;
+        &__header {
+            margin-top: 30px;
+            font-size: 25px;
+        }
+        &__subheader {
+            margin-top: 12px;
+            font-size: 15px;
+        }
+        &__icons {
+            width: 310px;
+        }
+        &__link{
+            font-size: 12px;
+        }
+        &__wrapper {
+            padding-bottom: 43px;
+        }
+    }
+    .advant {
+        padding: 40px 0 40px 0;        
+        &__wrapper {
+            margin-top: 20px;
+            flex-direction: column;
+            justify-content: space-between;
+            }
+        &__item {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 300px;
+        }
+        &__descr {
+            margin-top: 22px;
+            font-size: 16px;
+        }
+        &__text {
+            margin-top: 16px;
+            font-size: 12px;
+        }
+    }
+    .title {
+        font-size: 22px;
+        &_left{
+            font-size: 22px;
+        }
+    } 
+    .consultation {
+        min-height: 580px;
+        padding: 60px 0 62px 0;
+        &__descr {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        .feed-form {
+            width: 200px;
+            input {
+                height: 45px;
+            }
+        }
+    }   
+}
