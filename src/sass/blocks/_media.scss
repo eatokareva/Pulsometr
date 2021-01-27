@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     .container {
-        max-width: 900px;
+        max-width: 780px;
     }
     .title{
         &_left{
@@ -8,7 +8,7 @@
         }
 
     }
-    
+       
 }
 
 @media (max-width: 991px) {
@@ -65,7 +65,43 @@
         &__descr {
             font-size: 18px;
         }
-    }     
+    }   
+    .carousel .owl-carousel {
+        width: 600px;
+        img {
+            width: 90%;
+            margin: 0 auto;
+        }
+      
+        button.owl-prev, button.owl-next {
+            img {
+                display: none;
+            }
+        
+        } 
+    }
+        // .prev, .next {
+        //     display: none;
+        // }
+        // &__inner {
+        //     img {
+        //         width: 100%;
+        //     }
+        // }
+        // .owl-carousel {
+        //     width: 600px;
+        //     img {
+        //         width: 90%;
+        //         margin: 0 auto;
+        //     }
+          
+        //     button.owl-prev, button.owl-next {
+        //         img {
+        //             display: none;
+        //         }
+            
+        //     } 
+        // }  
 }
 
 @media (max-width: 767px) {
@@ -116,6 +152,32 @@
         .feed-form {
             width: 250px;
         }
+    }
+    // .carousel {
+    //     .prev, .next {
+    //         display: none;
+    //     }
+    //     &__inner {
+    //         img {
+    //             width: 100%;
+    //         }
+    //     }
+              
+    // } 
+    .carousel {
+        .owl-carousel {
+            width: 540px;
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }  
+        button.owl-prev, button.owl-next {
+            img {
+                display: none;
+            }
+        
+        } 
     }
     
 }
@@ -219,5 +281,31 @@
                 height: 45px;
             }
         }
+    } 
+    // .carousel {
+    //     .prev, .next {
+    //         display: none;
+    //     }
+    //     &__inner {
+    //         img {
+    //             width: 100%;
+    //         }
+    //     }
+              
+    // } 
+    .carousel {
+        .owl-carousel {
+            width: 300px;
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }  
+        button.owl-prev, button.owl-next {
+            img {
+                display: none;
+            }
+            
+        } 
     }   
 }
