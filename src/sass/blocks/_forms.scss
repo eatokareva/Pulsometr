@@ -1,5 +1,7 @@
 .feed-form {
     margin-top: 36px;
+    display: flex;
+    flex-direction: column;
     width: 300px;
     input {
         width: 100%;
@@ -16,6 +18,9 @@
         font-weight: 300;
         color: #4b4b4b;
         
+    }
+    &_mt25 {
+        margin-top: 25px;
     }
     
 }

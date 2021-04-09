@@ -8,6 +8,23 @@
         }
 
     }
+    .footer {
+        &__info {
+            width: 340px;
+            height: 220px;
+        }
+        &__address {
+            margin-top: 35px;
+            font-size: 18px;
+        }
+        &__phone {
+            margin-top: 25px;
+            font-size: 18px;
+        }
+        &__social {
+            margin-top: 25px;
+        }
+    }
        
 }
 
@@ -102,18 +119,34 @@
             
         //     } 
         // }  
-<<<<<<< HEAD
-    .reviews {
-        &__content {
-            width: 560px;
+    // .reviews {
+    //     &__wrapper {
+    //         width: 760px;
+    //     }
+        
+    //     hr {
+    //         max-width: 100%;
+    //     }
+
+    // }
+    .footer {
+        &__info {
+            width: 280px;
+            height: 200px;
         }
-        hr {
-            width: 760px;
+        &__address {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        &__phone {
+            margin-top: 20px;
+            font-size: 17px;
+        }
+        &__social {
+            margin-top: 20px;
         }
     }
 
-=======
->>>>>>> main
 }
 
 @media (max-width: 767px) {
@@ -191,17 +224,14 @@
         
         } 
     }
-<<<<<<< HEAD
-    .reviews {
-        &__content {
-            width: 360px;
-        }
-        hr {
-            width: 560px;
-        }
-    }
-=======
->>>>>>> main
+    // .reviews {
+    //     &__content {
+    //         width: 360px;
+    //     }
+    //     hr {
+    //         width: 560px;
+    //     }
+    // }
     
 }
 @media (max-width: 575px) {
@@ -317,6 +347,7 @@
               
     // } 
     .carousel {
+        padding-bottom: 30px;
         .owl-carousel {
             width: 300px;
             img {
@@ -331,4 +362,50 @@
             
         } 
     }   
+    .catalog {
+        padding-bottom: 50px;
+        &__tabs {
+            margin-top: 35px;
+            flex-direction: column;
+        }
+
+        &__tab {
+            margin-bottom: 5px;
+        }
+    }
+
+    .reviews {
+        &__item {
+            flex-direction: column;
+        }
+        &__content {
+            width: 290px;
+            text-align: justify;
+        }
+        &__person {
+            margin-top: 20px;
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+    }
+    .footer {
+        &__info {
+            width: 270px;
+            height: 190px;
+        }
+        &__address {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        &__phone {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        &__social {
+            margin-top: 20px;
+        }
+    }
+
 }

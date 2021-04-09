@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 $(document).ready(function(){
-=======
-// $(document).ready(function(){
->>>>>>> main
 // 	$('.carousel__inner').slick({ 
 // 		speed: 2000,                                
 // 		// adaptiveHeight: true,
@@ -50,11 +46,7 @@ $(document).ready(function(){
 // 	slider.goTo('next');
 //   });
 
-<<<<<<< HEAD
     $('.owl-carousel').owlCarousel({
-=======
-$('.owl-carousel').owlCarousel({
->>>>>>> main
     loop:true,
     margin:10,
 	nav:true,
@@ -75,7 +67,6 @@ $('.owl-carousel').owlCarousel({
             items:1
         }
     }
-<<<<<<< HEAD
     })
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
@@ -111,9 +102,3 @@ $('.owl-carousel').owlCarousel({
     toggleSlide('.catalog-item__back');
 
 });
-=======
-})
-$(document).ready(function(){
-	$(".owl-carousel").owlCarousel();
-  });
->>>>>>> main
