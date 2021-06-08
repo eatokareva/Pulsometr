@@ -25,4 +25,14 @@
         }
         
     }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        color: #fff;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
 }

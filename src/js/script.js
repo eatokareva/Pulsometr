@@ -120,5 +120,82 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
     });
+    // $('#consultation-form').validate();
+    // $('#consultation form').validate({
+    //     rules: {
+    //         name: {
+    //             required: true,
+    //             minlength: 2
+    //         },
+    //         phone: "required",
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: {
+    //             required: "Пожалуйста, укажите свое имя",
+    //             minlength: jQuery.validator.format("Введите {0} символов!")
+    //         },
+    //         phone: "Пожалуйста, укажите свой номер телефона",
+    //         email: {
+    //           required: "Пожалуйста, введите свой email",
+    //           email: "Неправильно введен email"
+    //         }
+    //       }
+    // });
+    // $('#order form').validate();
+
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, укажите свое имя",
+                    minlength: jQuery.validator.format("Введите {0} символов!")
+                },
+                phone: "Пожалуйста, укажите свой номер телефона",
+                email: {
+                  required: "Пожалуйста, введите свой email",
+                  email: "Неправильно введен email"
+                }
+              }
+        });
+    };
+        valideForms('#consultation-form');
+        valideForms('#consultation form');
+        valideForms('#order form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+    
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+
+            $('form').trigger('reset');
+        });
+        return false;
+    })
 
 });
+
+    
